@@ -41,7 +41,6 @@ Given an array, index, and additional value, insert the value into array at give
 function insertAt(array, num, val){
     for(var index = array.length; index > num; index--){
         var content = array[index-1];
-        // console.log('index is' + index, content);
         array[index] = content;
     }
     array[num] = val;
@@ -85,7 +84,6 @@ Sara is looking to hire an awesome web developer and has received applications f
 Second: Solve this without using any nested loops.
  */
 var applicants = ['Molly', 'Sam', 'Sam', 'Tom', 'Tom', 'Tom', 'Valerie', 'Valerie'];
-console.log('Duplicates in Array: ' + applicants);
 function removeDups(array){
     for(var index = array.length; index > 0; index--){
         if(array[index] == array[index-1]){
